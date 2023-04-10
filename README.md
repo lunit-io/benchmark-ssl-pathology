@@ -1,21 +1,16 @@
 # Benchmarking Self-Supervised Learning on Diverse Pathology Datasets
 
-[[`Project page`]](https://lunit-io.github.io/research/publications/pathology_ssl/) [[`arxiv`]](https://arxiv.org/abs/2212.04690)
-
 Official PyTorch Implementation and pre-trained models for `Benchmarking Self-Supervised Learning on Diverse Pathology Datasets`.
 
+[[`Project page`]](https://lunit-io.github.io/research/publications/pathology_ssl/) [[`arxiv`]](https://arxiv.org/abs/2212.04690)
 
+# Abstract
+
+Computational pathology can lead to saving human lives, but models are annotation hungry and pathology images are notoriously expensive to annotate. Self-supervised learning has shown to be an effective method for utilizing unlabeled data, and its application to pathology could greatly benefit its downstream tasks. Yet, there are no principled studies that compare SSL methods and discuss how to adapt them for pathology. To address this need, we execute the largest-scale study of SSL pre-training on pathology image data, to date. Our study is conducted using 4 representative SSL methods on diverse downstream tasks. We establish that large-scale domain-aligned pre-training in pathology consistently out-performs ImageNet pre-training in standard SSL settings such as linear and fine-tuning evaluations, as well as in low-label regimes. Moreover, we propose a set of domain-specific techniques that we experimentally show leads to a performance boost. Lastly, for the first time, we apply SSL to the challenging task of nuclei instance segmentation and show large and consistent performance improvements under diverse settings.
 
 
 # Pre-trained weights
-We execute the largest-scale study of SSL pre-training on pathology image data. Our study is conducted using 4 representative SSL methods below on diverse downstream tasks. We establish that large-scale domain-aligned pre-training in pathology consistently out-performs ImageNet pre-training.
-
-1. `bt_rn50_ep200.torch`: ResNet50 pre-trained using [Barlow Twins ](https://arxiv.org/abs/2103.03230)
-2. `mocov2_rn50_ep200.torch`: ResNet50 pre-trained using [MoCoV2](https://arxiv.org/abs/2003.04297)
-3. `swav_rn50_ep200.torch`: ResNet50 pre-trained using [SwAV](https://arxiv.org/abs/2006.09882)
-4. `dino_small_patch_${patch_size}_ep200.torch`: ViT-Small/`${patch_size}` pre-trained using [DINO](https://arxiv.org/abs/2104.14294)
-
-We provide SSL weights of ResNet50 and ViT-S backbone pre-trained on 19M patches from TCGA. Note that, all weights are pre-trained for 200 ImageNet epochs. Please, see below example for using pre-trained weights.
+We provide SSL weights of ResNet50 and ViT-S backbone pre-trained on 19M patches using TCGA data source. Note that, all weights are pre-trained for 200 ImageNet epochs and available [here](). Please, see below example for using pre-trained weights.
 
 ## ResNet50-based weights
 ```python
