@@ -6,11 +6,13 @@ Official PyTorch Implementation and pre-trained models for `Benchmarking Self-Su
 
 # Abstract
 
+![teaser](https://github.com/lunit-io/benchmark-ssl-pathology/tree/main/assets/ssl_teaser.png)
+
 Computational pathology can lead to saving human lives, but models are annotation hungry and pathology images are notoriously expensive to annotate. Self-supervised learning has shown to be an effective method for utilizing unlabeled data, and its application to pathology could greatly benefit its downstream tasks. Yet, there are no principled studies that compare SSL methods and discuss how to adapt them for pathology. To address this need, we execute the largest-scale study of SSL pre-training on pathology image data, to date. Our study is conducted using 4 representative SSL methods on diverse downstream tasks. We establish that large-scale domain-aligned pre-training in pathology consistently out-performs ImageNet pre-training in standard SSL settings such as linear and fine-tuning evaluations, as well as in low-label regimes. Moreover, we propose a set of domain-specific techniques that we experimentally show leads to a performance boost. Lastly, for the first time, we apply SSL to the challenging task of nuclei instance segmentation and show large and consistent performance improvements under diverse settings.
 
 
 # Pre-trained weights
-We provide SSL weights of ResNet50 and ViT-S backbone pre-trained on 19M patches using TCGA data source. Note that, all weights are pre-trained for 200 ImageNet epochs and available [here](). Please, see below example for using pre-trained weights.
+We provide SSL weights of ResNet50 and ViT-S backbone pre-trained on 19M patches using TCGA data source. Note that, all weights are pre-trained for 200 ImageNet epochs and available [here](https://github.com/lunit-io/benchmark-ssl-pathology/releases/tag/pretrained-weights). Please, see below example for using pre-trained weights.
 
 ## ResNet50-based weights
 ```python
