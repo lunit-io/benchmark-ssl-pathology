@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
 # License
 Pre-trained weights in this repository are bound by ''Public License'' issued from Lunit Inc.
-Note that, the weights might be used non-commercially, meaning that the weights are supposed to be used for research-only purpose.
+Note that, the weights must be used non-commercially, meaning that the weights must be used for research-only purpose.
 Please, see the detail [here](https://github.com/lunit-io/benchmark-ssl-pathology/blob/main/LICENSE).
 
 
