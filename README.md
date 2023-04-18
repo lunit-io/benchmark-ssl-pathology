@@ -1,6 +1,6 @@
 # Benchmarking Self-Supervised Learning on Diverse Pathology Datasets
 
-Official PyTorch Implementation and pre-trained models for `Benchmarking Self-Supervised Learning on Diverse Pathology Datasets`.
+Official PyTorch Implementation and pre-trained models for `Benchmarking Self-Supervised Learning on Diverse Pathology Datasets` (accepted in CVPR 2023).
 
 [[`Project page`]](https://lunit-io.github.io/research/publications/pathology_ssl/) [[`arxiv`]](https://arxiv.org/abs/2212.04690)
 
@@ -99,12 +99,17 @@ if __name__ == "__main__":
     # initialize ViT-S/16 trunk using DINO pre-trained weight
     model = vit_small(pretrained=True, progress=False, key="DINO_p16", patch_size=16)
 ```
+# Update log
+- [2023.04.18] Make pre-trained weights available
+- [WIP] Releasing the implementation of RandStainNA + GMM
 
 # License
 Pre-trained weights in this repository are bound by ''Public License'' issued from Lunit Inc.
 Note that, the weights must be used non-commercially, meaning that the weights must be used for research-only purpose.
 Please, see the detail [here](https://github.com/lunit-io/benchmark-ssl-pathology/blob/main/LICENSE).
 
+# Acknowledgement
+We built pre-trained weights using [VISSL](https://github.com/facebookresearch/vissl) and used official PyTorch implementation of HoVer-Net [here](https://github.com/vqdang/hover_net).
 
 # Citation
 ```
