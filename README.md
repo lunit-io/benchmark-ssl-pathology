@@ -39,7 +39,7 @@ class ResNetTrunk(ResNet):
 
 
 def get_pretrained_url(key):
-    URL_PREFIX = "https://github.com/lunit-io/benchmark-pathology-ssl/releases/download/pretrained-weights"
+    URL_PREFIX = "https://github.com/lunit-io/benchmark-ssl-pathology/releases/download/pretrained-weights"
     model_zoo_registry = {
         "BT": "bt_rn50_ep200.torch",
         "MoCoV2": "mocov2_rn50_ep200.torch",
@@ -72,7 +72,7 @@ from timm.models.vision_transformer import VisionTransformer
 
 
 def get_pretrained_url(key):
-    URL_PREFIX = "https://github.com/lunit-io/benchmark-pathology-ssl/releases/download/pretrained-weights"
+    URL_PREFIX = "https://github.com/lunit-io/benchmark-ssl-pathology/releases/download/pretrained-weights"
     model_zoo_registry = {
         "DINO_p16": "dino_vit_small_patch16_ep200.torch",
         "DINO_p8": "dino_vit_small_patch8_ep200.torch",
