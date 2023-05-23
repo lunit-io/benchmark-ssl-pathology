@@ -2,7 +2,7 @@
 
 Official PyTorch Implementation and pre-trained models for `Benchmarking Self-Supervised Learning on Diverse Pathology Datasets` (accepted in CVPR 2023).
 
-[[`Project page`]](https://lunit-io.github.io/research/publications/pathology_ssl/) [[`arxiv`]](https://arxiv.org/abs/2212.04690)
+[[`Paper`]](https://openaccess.thecvf.com/content/CVPR2023/html/Kang_Benchmarking_Self-Supervised_Learning_on_Diverse_Pathology_Datasets_CVPR_2023_paper.html)[[`Project page`]](https://lunit-io.github.io/research/publications/pathology_ssl/) [[`Arxiv`]](https://arxiv.org/abs/2212.04690)
 
 # Abstract
 
@@ -114,11 +114,11 @@ We built pre-trained weights using [VISSL](https://github.com/facebookresearch/v
 # Citation
 ```
 @inproceedings{kang2022benchmarking,
-  author={Kang, Mingu and Song, Heon and Park, Seonwook and Yoo, Donggeun and Pereira, Sérgio},
-  title={Benchmarking Self-Supervised Learning on Diverse Pathology Datasets},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month={June},
-  year={2023},
-  pages={TBU}
+    author    = {Kang, Mingu and Song, Heon and Park, Seonwook and Yoo, Donggeun and Pereira, Sérgio},
+    title     = {Benchmarking Self-Supervised Learning on Diverse Pathology Datasets},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {3344-3354}
 }
 ```
